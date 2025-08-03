@@ -1,8 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>this is my code</title>
+    <meta charset="UTF-8">
+    <title>Digital Clock Preview</title>
+    <link rel="stylesheet" href="clock.css">
 </head>
 <body>
-<p>my name is om</p>
+    <div class="container">
+        <h1 class="clock-title">THE TIME IS NOW</h1>
+        <div class="clock-row">
+            <div class="clock-box hour">
+                <span class="clock-value" id="hour">11</span>
+                <div class="clock-label">HOURS</div>
+            </div>
+            <div class="clock-box minute">
+                <span class="clock-value" id="minute">22</span>
+                <div class="clock-label">MINUTES</div>
+            </div>
+            <div class="clock-box second">
+                <span class="clock-value" id="second">03</span>
+                <div class="clock-label">SECONDS</div>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
 </body>
 </html>

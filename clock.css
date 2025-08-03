@@ -1,0 +1,82 @@
+body {
+    background: #06001f;
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock-title {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.clock-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clock-box {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #127fd6;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    /* Reflection effect */
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0004);
+}
+
+.clock-box.hour {
+    background: #2196f3;
+}
+
+.clock-box.minute {
+    background: #29b6f6;
+}
+
+.clock-box.second {
+    background: #ec0062;
+}
+
+.clock-value {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.clock-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    background: rgba(0,0,0,0.08);
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
